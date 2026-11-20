@@ -3,4 +3,5 @@
 build/
 *.zip
 mod-minecraft-para-servidores/
-skill-issue-admin-limpio/
+skill-issue-admin-limpio/BasicInfo/
+run/
