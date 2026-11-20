@@ -1,0 +1,7 @@
+1|P-001|Computador|2500|20
+2|P-002|Tablet|500|25
+3|P-003|Audifonos|100|18
+4|P-004|Parlante|80|4
+5|P-005|Mouse|25|50
+6|P-006|Laptop|1500.0|10
+1|P-007|TV|1300.0|16

@@ -1,6 +1,26 @@
-name: skill-issue-admin
-version: '${version}'
-
+name: SkillIssueAdmin
+version: '1.0-SNAPSHOT'
 main: ErrorCapa8.skillIssueAdmin.SkillIssueAdmin
-api-version: '26.3'
-load: POSTWORLD
+api-version: '1.20'
+
+commands:
+  report:
+    description: Reporta a un jugador por incumplir las reglas.
+    usage: /report <jugador> <motivo>
+    aliases: [reportar]
+    permission: skillissue.report
+    permission-message: No tienes permiso para usar este comando.
+  gestionarreportes:
+    description: Panel administrativo para gestionar los reportes del servidor.
+    usage: /gestionarreportes <listar|ver|filtrar|resolver>
+    aliases: [greportes, reports]
+    permission: skillissue.admin.report
+    permission-message: No tienes permiso para acceder a la gestión de reportes.
+
+permissions:
+  skillissue.report:
+    description: Permite enviar reportes sobre otros jugadores.
+    default: true
+  skillissue.admin.report:
+    description: Permite administrar, filtrar y resolver reportes.
+    default: op
